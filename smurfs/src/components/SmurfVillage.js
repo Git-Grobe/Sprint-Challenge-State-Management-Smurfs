@@ -75,6 +75,7 @@ class SmurfVillage extends Component {
           />
           <button type="submit">Add Smurf</button>
         </form>
+        
         <div className="App">
           <ul>
             {this.props.smurfs.map((smurf, index) => (

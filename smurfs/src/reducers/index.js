@@ -99,7 +99,8 @@ export default (state = initialState, action) => {
         return {
           ...state,
           editingSmurf: false,
-          smurfs: action.payload
+          smurfs: action.payload,
+          
         };
       }
       case EDIT_FAILURE: {
