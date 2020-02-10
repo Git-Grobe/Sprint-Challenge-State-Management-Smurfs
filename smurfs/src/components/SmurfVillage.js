@@ -91,7 +91,7 @@ class SmurfVillage extends Component {
                 </button>
                 <button
                   onClick={() => this.editSmurf(smurf.id)}
-                  className="delete"
+                  className="edit"
                 >
                   EDIT
                 </button>

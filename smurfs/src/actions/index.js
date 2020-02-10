@@ -40,10 +40,10 @@ export const deleteSmurf = id => dispatch => {
     .catch(err => { dispatch({type: DELETE_FAILURE, payload: err}) })
 }
 
-export const editSmurf = id => dispatch => {
+export const editSmurf = (editedSmurf) => dispatch => {
   dispatch({type: EDIT_START});
   axios
-    .put(`http://localhost:3333/smurfs/${id}`)
+    .put(`http://localhost:3333/smurfs/${editedSmurf.id}`, editedSmurf)
     .then(res => { console.log(res); dispatch({type: EDIT_SUCCESS, payload: res.data}) })
     .catch(err => { dispatch({type: EDIT_FAILURE, payload: err}) })
 }
